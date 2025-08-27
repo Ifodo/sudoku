@@ -10,8 +10,9 @@
 <body class="min-h-screen bg-gray-50 text-gray-900">
 	<header class="w-full border-b border-gray-200 bg-white">
 		<div class="mx-auto max-w-5xl px-4 py-3 flex items-center gap-3">
-			<img src="./assets/logo.jpg" alt="IGetHouse logo" class="h-8 w-8 rounded" />
-			<h1 class="text-xl font-semibold tracking-tight"><span class="text-[#025940]">IGetHouse</span> Sudoku</h1>
+			<img id="brand-logo" src="./assets/logo.jpg" alt="IGetHouse logo" class="h-12 w-50 rounded bg-white object-contain" onerror="this.classList.add('hidden'); document.getElementById('brand-logo-fallback').classList.remove('hidden');" />
+			<div id="brand-logo-fallback" class="hidden h-12 w-12 rounded bg-[#025940] text-white grid place-items-center text-sm font-bold">IGH</div>
+			<h1 class="text-xl font-semibold tracking-tight"><span class="text-[#025940]"></span> Sudoku</h1>
 			<div class="ml-auto text-sm text-gray-500">Have fun and sharpen your mind</div>
 		</div>
 	</header>
