@@ -275,7 +275,7 @@ newGameBtn.addEventListener("click", () => newGame());
 
 difficultySelect.addEventListener("change", () => {
 	state.difficulty = difficultySelect.value;
-	autosave();
+	newGame();
 });
 
 const newGame = () => {
